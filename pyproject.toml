@@ -3,12 +3,12 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "template"
+name = "single_cell"
 description="A Python package description goes here."
 version = "0.0.1"
 readme = "README.md"
 license = { text = "BSD-3" }
-authors = [{ name = "YourName", email = "YourName@email.com" }]
+authors = [{ name = "Rhys McAlister", email = "mcalisterrhys@gmail.com" }]
 keywords = ["MyKeyword1", "MyKeyword2"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -39,10 +39,10 @@ docs = [
 ]
 
 [tool.setuptools.package-data]
-template = ["py.typed"]
+single_cell = ["py.typed"]
 
 [tool.pyright]
-include = ["template"]
+include = ["single_cell"]
 exclude = ["**/__pycache__"]
 
 [tool.pytest.ini_options]
@@ -118,7 +118,7 @@ exclude = []
 flake8-unused-arguments.ignore-variadic-names = true
 extend-exclude = ["tests"]
 pydocstyle.convention = "numpy"
-isort.known-first-party = ["template"]
+isort.known-first-party = ["single_cell"]
 
 [tool.docformatter]
 pre-summary-newline = true
