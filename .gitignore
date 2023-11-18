@@ -58,7 +58,8 @@ dmypy.json
 
 # Editors ignores
 .vscode*
-
+*.csv
+*.parquet
 # Environments
 .env
 .venv
@@ -67,3 +68,5 @@ env/
 ENV/
 env.bak/
 venv.bak/
+data/raw_files/adata_excluded_ids.csv
+.gitignore
